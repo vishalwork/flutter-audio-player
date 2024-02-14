@@ -75,6 +75,7 @@ class _PlayScreenContentState extends State<PlayScreenContent> {
     _positionSubscription?.cancel();
     _playerCompleteSubscription?.cancel();
     _playerStateChangeSubscription?.cancel();
+    _audioPlayer.dispose();
     super.dispose();
   }
 
